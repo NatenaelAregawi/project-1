@@ -30,6 +30,6 @@ jobs:
 
     - name: Build Kivy App
       run: |
-        cd project-1
+        cd MyKivyApp
         buildozer init
         buildozer android debug
