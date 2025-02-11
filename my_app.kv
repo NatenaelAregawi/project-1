@@ -1,0 +1,32 @@
+<MyRoot>:
+
+    random_label_word: random_label_word
+    random_label_number: random_label_number
+
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: "NattyRandom"
+            font_size: 64
+            color: 0.92, 0.45, 0.1
+        Label:
+            id: random_label_word
+            text: "-"
+            font_size: 64
+        Label:
+            id: random_label_number
+            text: "-"
+            font_size: 64
+
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: "Generate Word"
+                font_size: 32
+                size: 100, 50
+                on_press: root.generate_word()
+            Button:
+                text: "Generate Number"
+                font_size: 32
+                size: 100, 50
+                on_press: root.generate_number()
